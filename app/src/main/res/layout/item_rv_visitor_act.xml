@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/act_bg">
+
+    <FrameLayout
+        android:id="@+id/fl_header"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/shape_item_rv_visitor_header_img_bg_visitor_act">
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp" />
+
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/view_baseLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fl_header"
+        android:layout_marginTop="11dp"
+        android:background="@color/m1D1D24"
+        android:layout_marginHorizontal="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ageSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_female_age_bg_visitor_act"
+        android:drawableLeft="@drawable/female_flag_visitor_act"
+        android:drawablePadding="6dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:layout_above="@+id/view_baseLine"
+        android:layout_toRightOf="@+id/fl_header"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="13dp"
+        android:text="26"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/tv_visitorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="angle"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/tv_ageSex"
+        android:layout_above="@+id/tv_ageSex"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8/15  09:20"
+        android:textColor="@color/m89_3"
+        android:textSize="11sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        />
+
+</RelativeLayout>

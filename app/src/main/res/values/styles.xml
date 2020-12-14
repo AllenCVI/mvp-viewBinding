@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!--闪屏页面主题，防止白屏-->
+    <style name="splashTheme" parent="AppTheme">
+
+        <item name="android:background">@drawable/bg_splash_act</item>
+        <!--<item name="android:windowBackground">@color/redD5</item>-->
+    </style>
+
+    <!--首页底部RadioButton-->
+    <style name="MainTabItemStyle" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">0sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="pop_anim">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_hidden</item>
+    </style>
+
+    <style name="pop_anim_alpha">
+        <item name="android:windowEnterAnimation">@anim/pop_show_alpha</item>
+        <item name="android:windowExitAnimation">@anim/pop_hidden_alpha</item>
+    </style>
+
+    <style name="BlinkRatingBar">
+        <item name="android:progressDrawable">@drawable/star_rate</item> #背景等样式
+        <item name="android:minHeight">30dp</item> #最小高度
+        <item name="android:maxHeight">30dp</item> #最大高度
+        <item name="android:thumb">@null</item> #一般设置为null
+        <item name="android:isIndicator">false</item> #是否是展示，true，只能看不能点击
+    </style>
+</resources>

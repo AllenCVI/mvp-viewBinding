@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Hot"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="9dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_rank"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rank_img_main_act"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/iv_rank"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_countryChange"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/country_change_home_fg"
+            android:layout_marginRight="8dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <com.newblink.blink.android.common.view.BlinkRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_country"
+        android:layout_marginTop="5dp"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_anchorList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    </com.newblink.blink.android.common.view.BlinkRefreshLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+    <ImageView
+        android:id="@+id/iv_backUp"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/back_up_img"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/Ranking_List"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/iv_backUp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:textSize="16sp"
+        android:textColor="@color/mFF4BBC"
+        android:text="@string/rule"
+        android:drawableLeft="@drawable/rule_rank_act"
+        android:drawablePadding="6dp"
+        android:background="@drawable/shape_rule_rank_act"
+        android:paddingLeft="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rank"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="48dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_Goddess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/mFF00FF"
+            android:paddingVertical="8dp"
+            android:text="@string/Goddess"
+            android:background="@drawable/selector_goddess_rank_act"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_MaleGod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingVertical="8dp"
+            android:text="@string/Male_god"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_male_god_rank_act"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

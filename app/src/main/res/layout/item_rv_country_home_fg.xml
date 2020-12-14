@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_countryLocation"
+        android:layout_width="10dp"
+        android:layout_height="13dp"
+        android:src="@drawable/country_location_home_fg"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/m9D9D9D"
+        android:text="ThailandIndia"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</LinearLayout>

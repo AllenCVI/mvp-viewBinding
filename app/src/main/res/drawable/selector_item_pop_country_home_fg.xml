@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="200"
+    android:exitFadeDuration="200"
+    >
+
+    <item android:drawable="@drawable/shape_item_pop_selected_country_home_fg" android:state_selected="true"/>
+    <item android:drawable="@drawable/shape_item_pop_unselected_country_home_fg" android:state_selected="false"/>
+
+
+</selector>

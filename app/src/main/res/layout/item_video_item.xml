@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.newblink.blink.android.video.util.VideoListItemView
+        android:id="@+id/video_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_headerImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="14dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/call_img_video_fg"
+        />
+
+    <ImageView
+        android:id="@+id/iv_anchorState"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/online_state_anchor_video_fg"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="bottom"
+        />
+
+    <TextView
+        android:id="@+id/tv_anchorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cassie"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/fe_3"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="73dp"
+        android:layout_marginBottom="57dp"
+        />
+    
+    <ImageView
+        android:id="@+id/iv_country"
+        android:layout_width="24dp"
+        android:layout_height="17dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="73dp"
+        android:layout_marginBottom="31dp"
+        android:src="@drawable/india_national_flag"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/fe_3"
+        android:layout_marginLeft="104dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:text="@string/india"
+        />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/fe_3"
+        android:text="10km"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="42dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_hi"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:src="@drawable/hi_img_video_fg"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="102dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    
+    <ImageView
+        android:id="@+id/iv_callPhone"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:src="@drawable/call_img_video_fg"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="102dp"
+        />
+    
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:src="@drawable/video_img_video_fg"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="102dp"
+        android:layout_marginRight="44dp"
+        />
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="231dp"
+    android:layout_height="301dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="231dp"
+        android:layout_height="253dp"
+        android:background="@drawable/shape_pop_content_rate_us_setting_act">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="231dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_pop_middle_rate_us_setting_act" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="231dp"
+            android:layout_height="92dp"
+            android:background="@drawable/shape_pop_top_rate_us_setting_act">
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_enjoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/Enjoying_Blink"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_marginTop="13dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="46dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_enjoy"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/BlinkRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="189dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_bt_registration_entrance"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/close_rate_us_setting_act"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_content"
+        android:layout_marginTop="19dp"
+        />
+
+
+</RelativeLayout>

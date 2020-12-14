@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="203dp"
+    android:paddingHorizontal="3dp"
+    android:paddingVertical="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_anchorImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_online_anchor_home_fg"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_onlineState"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:src="@drawable/online_anchor_img_home_fg"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_onlineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/online"
+            android:textSize="9sp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="6dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_country"
+        android:layout_width="16dp"
+        android:layout_height="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="India"
+        android:layout_alignBottom="@+id/iv_country"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@+id/iv_country"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/fe_3"
+        android:text="Cassie"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_hiAnchor"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hi_anchor_img_home_fg"
+        />
+
+
+</RelativeLayout>

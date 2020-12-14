@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dueeeke.dkplayer:dkplayer-ui:3.2.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/daemon/6.1.1/caches/transforms-2/files-2.1/44d2b9068a0ba00968787e3e7073857c/jetified-dkplayer-ui-3.2.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/daemon/6.1.1/caches/transforms-2/files-2.1/44d2b9068a0ba00968787e3e7073857c/jetified-dkplayer-ui-3.2.6/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/daemon/6.1.1/caches/modules-2/files-2.1/com.github.dueeeke.dkplayer/dkplayer-ui/3.2.6/6a8a168046ad804e9b6a40c2469afdbe4ba00e71/dkplayer-ui-3.2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/daemon/6.1.1/caches/modules-2/files-2.1/com.github.dueeeke.dkplayer/dkplayer-ui/3.2.6/94132d954790d2fc2eaa05dccc94520b0a14154a/dkplayer-ui-3.2.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

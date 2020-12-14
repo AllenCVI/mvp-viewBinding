@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop_radius_birthday_selector"
+    android:paddingBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/shape_pop_radius_birthday_selector2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Birthday"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/m64_3"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/close_img_birthday_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_birthdaySelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:paddingHorizontal="20dp"
+        android:layout_centerInParent="true">
+
+        <com.newblink.blink.android.common.view.WheelView
+            android:id="@+id/wheel_view_day"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:wheelTotalOffsetX="4dp"
+            app:wheelItemVerticalSpace="20dp"
+            app:wheelShowCount="5"
+            app:wheelTextColor="@color/m212e44"
+            />
+
+        <com.newblink.blink.android.common.view.WheelView
+            android:id="@+id/wheel_view_month"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:wheelItemVerticalSpace="20dp"
+            app:wheelShowCount="5"
+            app:wheelTextColor="@color/m212e44"
+            app:wheelTextSize="17sp"
+            />
+
+
+        <com.newblink.blink.android.common.view.WheelView
+            android:id="@+id/wheel_view_year"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:wheelItemVerticalSpace="20dp"
+            app:wheelShowCount="5"
+            app:wheelTotalOffsetX="-4dp"
+            app:wheelTextColor="@color/m212e44"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_bt_registration_entrance"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_birthdaySelector"
+        android:layout_marginTop="19dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

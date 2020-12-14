@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="259dp"
+    android:layout_height="177dp"
+    android:background="@drawable/shape_pop_country_bg_home_fg"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_countrySelect"
+        android:layout_width="259dp"
+        android:layout_height="177dp"/>
+
+
+</RelativeLayout>

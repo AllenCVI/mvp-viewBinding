@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+    <ImageView
+        android:id="@+id/iv_backUp"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/back_up_img"
+        />
+
+    <TextView
+        android:id="@+id/tv_userLoginStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_backUp"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="23dp"
+        android:textStyle="bold"
+        android:textSize="29sp"
+        android:textColor="@color/f5_3"
+        android:text="@string/userLoginStr"
+        />
+
+    <TextView
+        android:id="@+id/tv_account_numberStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_userLoginStr"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/m5c5964"
+        android:textSize="15sp"
+        android:text="@string/Account_numberStr"
+        />
+
+    <EditText
+        android:id="@+id/et_accountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_et_account_number_login"
+        android:layout_marginHorizontal="22dp"
+        android:layout_below="@+id/tv_account_numberStr"
+        android:layout_marginTop="19dp"
+        android:hint="@string/Enter_your_number"
+        android:textColorHint="@color/m8E8E93"
+        android:paddingVertical="17dp"
+        android:paddingHorizontal="17dp"
+        android:textColor="@color/m8E8E93"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_passwordStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_accountNumber"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/m5c5964"
+        android:textSize="15sp"
+        android:text="@string/passwordStr"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_et_account_number_login"
+        android:layout_marginHorizontal="22dp"
+        android:layout_below="@+id/tv_passwordStr"
+        android:layout_marginTop="19dp"
+        android:hint="@string/Enter_your_password"
+        android:textColorHint="@color/m8E8E93"
+        android:paddingVertical="17dp"
+        android:paddingHorizontal="17dp"
+        android:textColor="@color/m8E8E93"
+        android:textSize="15sp"
+        />
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="317dp"
+        android:layout_height="57dp"
+        android:background="@drawable/shape_bt_registration_entrance"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:text="@string/loginStr"
+        android:textColor="@color/f5_3"
+        />
+
+</RelativeLayout>

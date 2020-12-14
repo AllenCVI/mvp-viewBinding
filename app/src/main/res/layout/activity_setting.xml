@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+    <ImageView
+        android:id="@+id/iv_backUp"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/back_up_img"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/settingStr"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/iv_backUp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_setting"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_userInfo"
+                android:layout_width="23dp"
+                android:layout_height="19dp"
+                android:layout_marginVertical="21dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/visitors_img_mine_fg"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_userInfo"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:text="@string/User_informationStr"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/forward_img_mine_fg"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_aboutBlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:layout_below="@+id/rl_userInfo"
+            >
+
+            <ImageView
+                android:id="@+id/iv_aboutBlink"
+                android:layout_width="23dp"
+                android:layout_height="19dp"
+                android:layout_marginVertical="21dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/gifts_img_mine_fg" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_aboutBlink"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:text="@string/About_Blink"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+            <ImageView
+                android:id="@+id/iv_forward"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/forward_img_mine_fg"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_rateUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:layout_below="@+id/rl_aboutBlink"
+            >
+
+            <ImageView
+                android:id="@+id/iv_rateUs"
+                android:layout_width="23dp"
+                android:layout_height="19dp"
+                android:layout_marginVertical="21dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/setting_img_mine_fg" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_rateUs"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:text="@string/Rate_usStr"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/forward_img_mine_fg"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_switchUser"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shape_bt_registration_entrance"
+        android:text="@string/Switch_userStr"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blink V1.0.0"
+        android:layout_below="@+id/bt_switchUser"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/mFF40D5"
+        android:layout_marginTop="11dp"
+        android:textSize="13sp"
+        />
+
+</RelativeLayout>

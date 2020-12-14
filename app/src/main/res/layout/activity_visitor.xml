@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_backUp"
+        android:layout_width="18dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/back_up_img"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/Recent_visitors"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/iv_backUp"
+        />
+
+<RelativeLayout
+    android:id="@+id/rl_noVIp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tv_visitor"
+    android:layout_marginTop="33dp"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:id="@+id/tv_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/e8_3"
+        android:text="@string/guest"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_visitorNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39"
+        android:textColor="@color/mFF2EF4"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/tv_guest"
+        android:layout_toRightOf="@+id/tv_guest"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/m73_3"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="90dp"
+        android:text="@string/visitor_describe"
+        android:gravity="center"
+        android:layout_below="@+id/tv_guest"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/tv_describe"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/fl_visitorHeader"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/fl_visitorHeader1"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/fl_visitorHeader"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/fl_visitorHeader3"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_visitorHeader5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/fl_visitorHeader3"
+        android:background="@drawable/shape_visitor_header_img_bg_visitor_act"
+        >
+
+        <ImageView
+            android:id="@+id/iv_visitorHeader5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_unlockVip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/shape_bt_registration_entrance"
+        android:text="@string/unlock_vip"
+        android:drawableLeft="@drawable/vip_button_visitor_act"
+        android:paddingHorizontal="70dp"
+        android:paddingVertical="13dp"
+        android:drawablePadding="3dp"
+        />
+
+
+</RelativeLayout>
+
+
+    <com.newblink.blink.android.common.view.BlinkRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_visitor"
+        android:layout_marginTop="15dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_visitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.newblink.blink.android.common.view.BlinkRefreshLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    >
+
+    <ImageView
+        android:id="@+id/iv_backUp"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/back_up_img"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/User_informationStr"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/iv_backUp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_userInfo"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_UserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="21dp"
+                android:layout_centerVertical="true"
+                android:text="@string/userId"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="900223"
+                android:textSize="13sp"
+                android:textColor="@color/cf_3"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:layout_below="@+id/rl_UserID"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/passwordStr"
+                android:layout_marginVertical="21dp"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"
+                android:text="900223"
+                android:textSize="13sp"
+                android:textColor="@color/cf_3"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_Change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:layout_below="@+id/rl_password"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="21dp"
+                android:layout_centerVertical="true"
+                android:text="@string/Change_password"
+                android:textSize="15sp"
+                android:textColor="@color/cf_3"
+                />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:src="@drawable/forward_img_mine_fg"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

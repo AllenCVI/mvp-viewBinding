@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/act_bg"
+    >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/shape_rg_mian_act"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/tab_home"
+                style="@style/MainTabItemStyle"
+                android:drawableTop="@drawable/selector_home_banner_bottom_tab_main_act"
+                />
+
+            <RadioButton
+                android:id="@+id/tab_video"
+                style="@style/MainTabItemStyle"
+                android:drawableTop="@drawable/selector_video_banner_bottom_tab_main_act"
+                />
+
+            <RadioButton
+                android:id="@+id/tab_message"
+                style="@style/MainTabItemStyle"
+                android:drawableTop="@drawable/selector_message_banner_bottom_tab_main_act"
+                 />
+
+            <RadioButton
+                android:id="@+id/tab_mine"
+                style="@style/MainTabItemStyle"
+                android:drawableTop="@drawable/selector_mine_banner_bottom_tab_main_act"
+                 />
+        </RadioGroup>
+
+</FrameLayout>

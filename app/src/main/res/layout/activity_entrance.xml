@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_entrance_act"
+    >
+
+    <ImageView
+        android:id="@+id/iv_blink"
+        android:layout_width="190.5dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginLeft="95dp"
+        android:src="@drawable/title_img_entrance_act"
+        />
+
+    <Button
+        android:id="@+id/bt_registration"
+        android:layout_width="317dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="74dp"
+        android:text="@string/registration_entrance"
+        android:textAllCaps="false"
+        android:textColor="@color/f5_3"
+        android:textSize="18sp"
+        android:background="@drawable/shape_bt_registration_entrance"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_blink"
+        />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="317dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="21dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/f5_3"
+        android:textAllCaps="false"
+        android:text="@string/login_entrance"
+        android:background="@drawable/shape_bt_login_entrance"
+        android:layout_below="@+id/bt_registration"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
